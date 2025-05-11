@@ -31,21 +31,25 @@
 
 <body>
     <h1>Welcome to my Page</h1>
+
+    <!-- Ordered List with Roman Numerals -->
     <ol type="I">
         <li>Home</li>
         <li>About</li>
         <li>Services</li>
         <li>Contact</li>
     </ol>
+
     <h2>The best free stock photos</h2>
+    <!-- External Image from Pexels -->
     <img src="https://images.pexels.com/photos/7161192/pexels-photo-7161192.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
         alt="Nature image" width="500">
 
-    <!-- Table -->
+    <!-- Table for Contacts -->
     <h3>Contact List</h3>
     <table>
         <tr>
-            <th>Name</th></br />
+            <th>Name</th>
             <th>Address</th>
             <th>Mobile</th>
             <th>Emails</th>
@@ -57,50 +61,82 @@
             <td>saido@gmail.com</td>
         </tr>
         <tr>
-            <td>Saido Omar</td>
-            <td>Kenya</td>
-            <td>+254715446522</td>
-            <td>saido@gmail.com</td>
+            <td>Jane Doe</td>
+            <td>USA</td>
+            <td>+1234567890</td>
+            <td>jane@example.com</td>
         </tr>
         <tr>
-            <td>Saido Omar</td>
-            <td>Kenya</td>
-            <td>+254715446522</td>
-            <td>saido@gmail.com</td>
+            <td>Ali Mohd</td>
+            <td>Somalia</td>
+            <td>+254701234567</td>
+            <td>ali@example.com</td>
         </tr>
         <tr>
-            <td>Saido Omar</td>
-            <td>Kenya</td>
-            <td>+254715446522</td>
-            <td>saido@gmail.com</td>
+            <td>Mary Smith</td>
+            <td>UK</td>
+            <td>+447712345678</td>
+            <td>mary.smith@example.com</td>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>Canada</td>
+            <td>+1239876543</td>
+            <td>john@example.com</td>
         </tr>
     </table>
-    <!-- Registration fomr -->
+
+    <!-- Registration Form -->
     <h2>Registration Form</h2>
-    <form action="#"></form>
-    <label for="name">Full name</label>
-    <input type="text" name="" id="" placeholder="Enter your full name" required>
+    <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
 
-    <label for="email">Email</label>
-    <input type="email" name="email" id="" placeholder="Enter your email" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
 
-    <label for="password">Password</label>
-    <input type="password" name="" id="" placeholder="Enter your password" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
 
-    <label for="date">Date</label>
-    <input type="date" name="" id="" placeholder="Date" required>
-    <!-- dropdown -->
-    <label for="fruits">Fruits</label>
-    <select id="fruits" name="fruits" required>
-        <option value="">Select Your favourite fruit </option>
-        <option value="Apple">Apple</option>
-        <option value="Mango">Mango</option>
-        <option value="Orange">Orange</option>
-        <option value="Banana">Banana</option>
-    </select>
-    <br />
+        <label for="date">Date of Birth</label>
+        <input type="date" id="date" required>
 
-    <br />
+        <!-- Dropdown for Fruits -->
+        <label for="fruits">Favorite Fruit</label>
+        <select id="fruits" name="fruits" required>
+            <option value="">Select your favorite fruit</option>
+            <option value="Apple">Apple</option>
+            <option value="Mango">Mango</option>
+            <option value="Orange">Orange</option>
+            <option value="Banana">Banana</option>
+        </select>
+
+        <!-- Radio Buttons for Gender -->
+        <label for="banana">Banana</label>
+        <input type="radio" id="orange" name="banana" value="orange" required>
+        <label for="male">Orange</label>
+        <input type="radio" id="apple" name="banana" value="apple" required>
+        <label for="female">Apple</label>
+
+        <!-- Checkboxes for Preferences -->
+        <label for="preferences">Books</label>
+        <input type="checkbox" id="sports" name="interests" value="Sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="Music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests" value="Reading">
+        <label for="reading">Reading</label>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Multimedia: Video Example -->
+    <h3>Watch this Video</h3>
+    <video width="400" controls>
+        <source src="https://youtu.be/uQ0LGwPBC2c" type="video/mp4">
+       Tom and Jerry
+    </video>
+
 </body>
 
 </html>
